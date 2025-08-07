@@ -446,10 +446,6 @@ class ContactForm {
     handleSubmit(e) {
         e.preventDefault();
         
-        // Get form data
-        const formData = new FormData(this.form);
-        const data = Object.fromEntries(formData);
-        
         // Simulate form submission
         this.showSuccessMessage();
         this.form.reset();
@@ -584,9 +580,11 @@ document.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('resize', () => {
     // Recreate cursor effects if switching between mobile/desktop
     const existingCursor = document.querySelector('.cursor');
+    const existingFollower = document.querySelector('.cursor-follower');
+    
     if (window.innerWidth <= 768 && existingCursor) {
         existingCursor.remove();
-        document.querySelector('.cursor-follower').remove();
+        if (existingFollower) existingFollower.remove();
     } else if (window.innerWidth > 768 && !existingCursor) {
         new CursorEffects();
     }
