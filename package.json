@@ -1,0 +1,44 @@
+{
+  "name": "chandan-portfolio",
+  "version": "1.0.0",
+  "description": "A stunning portfolio website with 3D animations and interactive JavaScript projects",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "serve": "npx http-server -p 8000",
+    "build": "echo 'No build process needed - static site'",
+    "deploy": "echo 'Deploy to your preferred hosting service'"
+  },
+  "keywords": [
+    "portfolio",
+    "threejs",
+    "3d-animations",
+    "javascript",
+    "gsap",
+    "webgl",
+    "interactive",
+    "responsive"
+  ],
+  "author": "Chandan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/portfolio2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/portfolio2/issues"
+  },
+  "homepage": "https://yourusername.github.io/portfolio2",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
